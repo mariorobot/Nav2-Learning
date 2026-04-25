@@ -45,15 +45,25 @@ def generate_launch_description():
   	arguments=['-entity', 'sam_bot', '-topic', 'robot_description'],
   	output='screen'
     )
-
+    robot_localization_node = Node(
+    package='robot_localization',
+    executable='ekf_node',
+    name='ekf_filter_node',
+    output='screen',
+    parameters=[os.path.join(pkg_share, 'config/ekf.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+    
+    
     return LaunchDescription([
     	DeclareLaunchArgument(name='gui', default_value='True', description='Flag to enable joint_state_publisher_gui'),
         DeclareLaunchArgument(name='model', default_value=default_model_path, description='Absolute path to robot model file'),
         DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, description='Absolute path to rviz config file'),
         ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so'], output='screen'),
+        DeclareLaunchArgument(name='use_sim_time', default_value='True', description='Flag to enable use_sim_time'),
         joint_state_publisher_node,
         robot_state_publisher_node,
         joint_state_publisher_gui_node,
         spawn_entity,
+        robot_localization_node,
         rviz_node
     ])

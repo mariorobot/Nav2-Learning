@@ -315,8 +315,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "src" "launch" "rviz" "DESTINATION" "share/sam_bot_description")
-ament_cmake_symlink_install_directory("/home/mario/sam_bot_description" DIRECTORY "src" "launch" "rviz" "DESTINATION" "share/sam_bot_description")
+# install(DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/sam_bot_description")
+ament_cmake_symlink_install_directory("/home/mario/sam_bot_description" DIRECTORY "src" "launch" "rviz" "config" "DESTINATION" "share/sam_bot_description")
 
 # install(FILES "/home/mario/sam_bot_description/build/sam_bot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/sam_bot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/mario/sam_bot_description" FILES "/home/mario/sam_bot_description/build/sam_bot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/sam_bot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
