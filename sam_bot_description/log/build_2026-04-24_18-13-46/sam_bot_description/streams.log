@@ -1,0 +1,57 @@
+[0.026s] Invoking command in '/home/mario/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake /home/mario/sam_bot_description -DCMAKE_INSTALL_PREFIX=/home/mario/sam_bot_description/install/sam_bot_description
+[0.176s] -- The C compiler identification is GNU 11.4.0
+[1.088s] -- The CXX compiler identification is GNU 11.4.0
+[1.104s] -- Detecting C compiler ABI info
+[1.215s] -- Detecting C compiler ABI info - done
+[1.223s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.223s] -- Detecting C compile features
+[1.224s] -- Detecting C compile features - done
+[1.229s] -- Detecting CXX compiler ABI info
+[1.345s] -- Detecting CXX compiler ABI info - done
+[1.355s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.356s] -- Detecting CXX compile features
+[1.356s] -- Detecting CXX compile features - done
+[1.384s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.592s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.772s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.900s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.901s] -- Configured cppcheck include dirs: 
+[1.901s] -- Configured cppcheck exclude dirs and/or files: 
+[1.903s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.905s] -- Added test 'lint_cmake' to check CMake code style
+[1.906s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.913s] -- Added test 'uncrustify' to check C / C++ code style
+[1.913s] -- Configured uncrustify additional arguments: 
+[1.915s] -- Added test 'xmllint' to check XML markup files
+[1.918s] -- Configuring done
+[1.921s] -- Generating done
+[1.923s] -- Build files have been written to: /home/mario/sam_bot_description/build/sam_bot_description
+[1.929s] Invoked command in '/home/mario/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake /home/mario/sam_bot_description -DCMAKE_INSTALL_PREFIX=/home/mario/sam_bot_description/install/sam_bot_description
+[1.931s] Invoking command in '/home/mario/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake --build /home/mario/sam_bot_description/build/sam_bot_description -- -j4 -l4
+[1.989s] Invoked command in '/home/mario/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake --build /home/mario/sam_bot_description/build/sam_bot_description -- -j4 -l4
+[2.003s] Invoking command in '/home/mario/sam_bot_description/build/sam_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake --install /home/mario/sam_bot_description/build/sam_bot_description
+[2.014s] -- Install configuration: ""
+[2.014s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src
+[2.015s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/description
+[2.015s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/description/sam_bot_description (copy).urdf
+[2.015s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/src/description/sam_bot_description.sdf
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/launch/display.launch.py
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/rviz/urdf_config.rviz
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/package_run_dependencies/sam_bot_description
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/parent_prefix_path/sam_bot_description
+[2.016s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.sh
+[2.017s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/ament_prefix_path.dsv
+[2.017s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.sh
+[2.017s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/environment/path.dsv
+[2.017s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.bash
+[2.018s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.sh
+[2.018s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.zsh
+[2.018s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/local_setup.dsv
+[2.018s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.dsv
+[2.019s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/ament_index/resource_index/packages/sam_bot_description
+[2.019s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig.cmake
+[2.019s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/cmake/sam_bot_descriptionConfig-version.cmake
+[2.019s] -- Installing: /home/mario/sam_bot_description/install/sam_bot_description/share/sam_bot_description/package.xml
+[2.022s] Invoked command in '/home/mario/sam_bot_description/build/sam_bot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mario/turtlebot3_ws/install/turtlebot3_teleop:/home/mario/turtlebot3_ws/install/turtlebot3_example:/home/mario/turtlebot3_ws/install/my_teleop:/home/mario/turtlebot3_ws/install/my_autodrive:/opt/ros/humble /usr/bin/cmake --install /home/mario/sam_bot_description/build/sam_bot_description
