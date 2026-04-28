@@ -10,6 +10,7 @@ def generate_launch_description():
     pkg_share = FindPackageShare(package='sam_bot_description').find('sam_bot_description')
     default_model_path = os.path.join(pkg_share, 'src', 'description', 'sam_bot_description.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz', 'config.rviz')
+    world_path=os.path.join(pkg_share, 'world/my_world.sdf')
 
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
@@ -23,7 +24,6 @@ def generate_launch_description():
         arguments=[default_model_path],
         parameters=[{'robot_description': Command(['xacro ', default_model_path])}],
         condition=UnlessCondition(LaunchConfiguration('gui'))
-
     )
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
@@ -58,7 +58,7 @@ def generate_launch_description():
     	DeclareLaunchArgument(name='gui', default_value='True', description='Flag to enable joint_state_publisher_gui'),
         DeclareLaunchArgument(name='model', default_value=default_model_path, description='Absolute path to robot model file'),
         DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path, description='Absolute path to rviz config file'),
-        ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so'], output='screen'),
+        ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so',world_path], output='screen'),
         DeclareLaunchArgument(name='use_sim_time', default_value='True', description='Flag to enable use_sim_time'),
         joint_state_publisher_node,
         robot_state_publisher_node,
